@@ -1,58 +1,75 @@
-📱 Weather App Flutter
+# 📱 Weather App Flutter
+
 Aplicativo simples para exibir o clima atual de uma cidade utilizando Flutter, OpenStreetMap e a API da Meteoblue.
 
-🚀 Tecnologias Utilizadas
-Flutter (SDK >= 3.x)
+---
 
-Dart (linguagem)
+## 🚀 Tecnologias Utilizadas
 
-HTTP (requisições HTTP)
+- **Flutter** (SDK >= 3.x)
+- **Dart** (linguagem)
+- **HTTP** (requisições HTTP)
+- **Meteoblue API** (dados climáticos)
+- **OpenStreetMap Nominatim API** (busca de coordenadas)
+- **Shared Preferences** (armazenamento local da cidade)
 
-Meteoblue API (dados climáticos)
+---
 
-OpenStreetMap Nominatim API (busca de coordenadas)
+## 📦 Dependências do Projeto
 
-Shared Preferences (armazenamento local da cidade)
-
-📦 Dependências do Projeto
 Instale as dependências necessárias:
+
+```bash
 flutter pub add http
 flutter pub add shared_preferences
 flutter pub add crypto
+```
 
-Ou adicione no seu pubspec.yaml:
+Ou adicione no seu `pubspec.yaml`:
 
+```yaml
 dependencies:
   flutter:
     sdk: flutter
   http: ^1.1.0
   shared_preferences: ^2.2.0
   crypto: ^3.0.3
+```
 
 E atualize os pacotes:
 
+```bash
 flutter pub get
-⚙️ Configuração
-Configure a API da Meteoblue
+```
 
-Crie uma conta gratuita em Meteoblue Developer Portal.
+---
 
-Gere uma API Key e um Shared Secret.
+## ⚙️ Configuração
 
-Substitua as variáveis no arquivo /lib/services/meteoblue_service.dart:
+1. **Configure a API da Meteoblue**
 
+   - Crie uma conta gratuita em [Meteoblue Developer Portal](https://my.meteoblue.com/).
+   - Gere uma **API Key** e um **Shared Secret**.
+   - Substitua as variáveis no arquivo `/lib/services/meteoblue_service.dart`:
+
+```dart
 static const String _sharedSecret = 'SUA_SHARED_SECRET';
 static const String _apiKey = 'SUA_API_KEY';
+```
 
-Permissões Android
+2. **Permissões Android**
 
-No arquivo android/app/src/main/AndroidManifest.xml, adicione:
+   No arquivo `android/app/src/main/AndroidManifest.xml`, adicione:
 
+```xml
 <uses-permission android:name="android.permission.INTERNET" />
+```
 
+---
 
-🛠 Estrutura do Projeto
+## 🛠 Estrutura do Projeto
 
+```
 lib/
 ├── pages/
 │   └── home_screen.dart          # Tela principal do app
@@ -60,33 +77,44 @@ lib/
 │   ├── meteoblue_service.dart     # Serviço para consumir a API Meteoblue
 │   └── storage_service.dart       # Serviço para armazenar a cidade localmente
 └── main.dart                      # Ponto de entrada do aplicativo
+```
 
+---
 
-📋 Funcionalidades Disponíveis
-Digitar uma cidade para buscar o clima atual (exemplo: Lisboa, Portugal).
+## 📋 Funcionalidades Disponíveis
 
-Exibir a temperatura atual e um ícone representando o clima.
+- Digitar uma cidade para buscar o clima atual (exemplo: `Lisboa, Portugal`).
+- Exibir a temperatura atual e um ícone representando o clima.
+- Salvar a cidade digitada localmente para reusar nas próximas vezes.
+- Possibilidade de alterar a cidade a qualquer momento pelo botão no AppBar.
+- Mensagens de erro amigáveis caso a cidade não seja encontrada ou o clima esteja indisponível.
 
-Salvar a cidade digitada localmente para reusar nas próximas vezes.
+---
 
-Possibilidade de alterar a cidade a qualquer momento pelo botão no AppBar.
+## 🧪 Como Rodar o Projeto
 
-Mensagens de erro amigáveis caso a cidade não seja encontrada ou o clima esteja indisponível.
-
-🧪 Como Rodar o Projeto
-1.Clone o repositório:
-
+1. Clone o repositório:
+```bash
 git clone https://github.com/seu-usuario/weather-flutter-app.git
+```
 
-2.Acesse o diretório do projeto:
-
+2. Acesse o diretório do projeto:
+```bash
 cd weather-flutter-app
+```
 
-3.Instale as dependências:
-
+3. Instale as dependências:
+```bash
 flutter pub get
+```
 
-4.Execute o aplicativo:
-
+4. Execute o aplicativo:
+```bash
 flutter run
+```
 
+---
+
+## 📜 Licença
+
+Projeto licenciado sob a licença MIT.
