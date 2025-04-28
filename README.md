@@ -1,30 +1,28 @@
-# trabalhoMobile_WeatherApp
-# 📱 Weather App Flutter - Previsão do Tempo
+📱 Weather App Flutter - Previsão do Tempo
+Aplicativo simples de clima usando Flutter + API Meteoblue.
+Permite buscar o clima atual de qualquer cidade digitando o nome (ex: São Paulo, Brasil) e exibe temperatura e ícone correspondente.
 
-Aplicativo simples de clima usando Flutter + API Meteoblue.  
-Permite buscar o clima atual de qualquer cidade digitando o nome (ex: `São Paulo, Brasil`) e exibe temperatura e ícone correspondente.
+🚀 Tecnologias Utilizadas
+Flutter (SDK >= 3.x)
 
----
+Dart (linguagem)
 
-## 🚀 Tecnologias Utilizadas
+HTTP (requisições)
 
-- **Flutter** (SDK >= 3.x)
-- **Dart** (linguagem)
-- **HTTP** (requisições)
-- **Meteoblue API** (clima)
-- **OpenStreetMap Nominatim** (geolocalização)
+Meteoblue API (clima)
 
----
+OpenStreetMap Nominatim (geolocalização)
 
-## 📦 Dependências do Projeto
-
+📦 Dependências do Projeto
 Certifique-se de instalar as seguintes dependências no seu projeto Flutter:
 
-```bash
+bash
+Copiar
+Editar
 flutter pub add http
 flutter pub add shared_preferences
-crypto: ^3.0.3
-Ou diretamente editando o pubspec.yaml:
+flutter pub add crypto
+Ou diretamente no pubspec.yaml:
 
 yaml
 Copiar
@@ -113,16 +111,14 @@ flutter run
 🔥 Melhorias Futuras
 Forecast de vários dias
 
-Integração com GPS automático
 
-Mudança automática de fundo conforme o clima
 
-Tema claro/escuro
+
 
 📜 Licença
 Este projeto está licenciado sob a licença MIT.
 Sinta-se livre para usar, melhorar e contribuir!
 
 💬 Contato
-Desenvolvido por Enzo Alvarenga.
+Desenvolvido por Enzo Alvarenga].
 📧 Email: alvarengaenzo2005@gmail.com
