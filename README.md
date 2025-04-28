@@ -1,124 +1,92 @@
-📱 Weather App Flutter - Previsão do Tempo
-Aplicativo simples de clima usando Flutter + API Meteoblue.
-Permite buscar o clima atual de qualquer cidade digitando o nome (ex: São Paulo, Brasil) e exibe temperatura e ícone correspondente.
+📱 Weather App Flutter
+Aplicativo simples para exibir o clima atual de uma cidade utilizando Flutter, OpenStreetMap e a API da Meteoblue.
 
 🚀 Tecnologias Utilizadas
 Flutter (SDK >= 3.x)
 
 Dart (linguagem)
 
-HTTP (requisições)
+HTTP (requisições HTTP)
 
-Meteoblue API (clima)
+Meteoblue API (dados climáticos)
 
-OpenStreetMap Nominatim (geolocalização)
+OpenStreetMap Nominatim API (busca de coordenadas)
+
+Shared Preferences (armazenamento local da cidade)
 
 📦 Dependências do Projeto
-Certifique-se de instalar as seguintes dependências no seu projeto Flutter:
-
-bash
-Copiar
-Editar
+Instale as dependências necessárias:
 flutter pub add http
 flutter pub add shared_preferences
 flutter pub add crypto
-Ou diretamente no pubspec.yaml:
 
-yaml
-Copiar
-Editar
+Ou adicione no seu pubspec.yaml:
+
 dependencies:
   flutter:
     sdk: flutter
   http: ^1.1.0
   shared_preferences: ^2.2.0
   crypto: ^3.0.3
-Depois, atualize com:
 
-bash
-Copiar
-Editar
+E atualize os pacotes:
+
 flutter pub get
-⚙️ Como configurar
-Chave da API Meteoblue
+⚙️ Configuração
+Configure a API da Meteoblue
 
-Crie uma conta gratuita em Meteoblue API
+Crie uma conta gratuita em Meteoblue Developer Portal.
 
-Gere uma API Key e o Shared Secret
+Gere uma API Key e um Shared Secret.
 
-No arquivo /lib/services/meteoblue_service.dart, substitua:
+Substitua as variáveis no arquivo /lib/services/meteoblue_service.dart:
 
-dart
-Copiar
-Editar
 static const String _sharedSecret = 'SUA_SHARED_SECRET';
 static const String _apiKey = 'SUA_API_KEY';
+
 Permissões Android
 
-Adicione no AndroidManifest.xml:
+No arquivo android/app/src/main/AndroidManifest.xml, adicione:
 
-xml
-Copiar
-Editar
 <uses-permission android:name="android.permission.INTERNET" />
-🛠 Estrutura de Pastas
-bash
-Copiar
-Editar
+
+
+🛠 Estrutura do Projeto
+
 lib/
 ├── pages/
-│   └── home_screen.dart      # Tela principal
+│   └── home_screen.dart          # Tela principal do app
 ├── services/
-│   ├── meteoblue_service.dart # Serviço de consumo da API Meteoblue
-│   └── storage_service.dart   # Armazena cidade no dispositivo (SharedPreferences)
-└── main.dart                  # Ponto de entrada do app
-📋 Funcionalidades
-🌍 Buscar clima de qualquer cidade digitando "Cidade, País"
+│   ├── meteoblue_service.dart     # Serviço para consumir a API Meteoblue
+│   └── storage_service.dart       # Serviço para armazenar a cidade localmente
+└── main.dart                      # Ponto de entrada do aplicativo
 
-☀️ Ícones para diferentes condições meteorológicas
 
-💾 Armazenamento local da cidade para reabrir o app sem precisar digitar novamente
+📋 Funcionalidades Disponíveis
+Digitar uma cidade para buscar o clima atual (exemplo: Lisboa, Portugal).
 
-🔄 Botão para trocar a cidade a qualquer momento
+Exibir a temperatura atual e um ícone representando o clima.
 
-🎯 Erro amigável quando cidade não encontrada ou API indisponível
+Salvar a cidade digitada localmente para reusar nas próximas vezes.
 
-🧪 Como rodar o projeto
-Clone o repositório:
+Possibilidade de alterar a cidade a qualquer momento pelo botão no AppBar.
 
-bash
-Copiar
-Editar
+Mensagens de erro amigáveis caso a cidade não seja encontrada ou o clima esteja indisponível.
+
+🧪 Como Rodar o Projeto
+1.Clone o repositório:
+
 git clone https://github.com/seu-usuario/weather-flutter-app.git
-Acesse a pasta:
 
-bash
-Copiar
-Editar
+2.Acesse o diretório do projeto:
+
 cd weather-flutter-app
-Instale dependências:
 
-bash
-Copiar
-Editar
+3.Instale as dependências:
+
 flutter pub get
-Execute o app:
 
-bash
-Copiar
-Editar
+4.Execute o aplicativo:
+
 flutter run
-🔥 Melhorias Futuras
-Forecast de vários dias
 
-
-
-
-
-📜 Licença
-Este projeto está licenciado sob a licença MIT.
-Sinta-se livre para usar, melhorar e contribuir!
-
-💬 Contato
-Desenvolvido por Enzo Alvarenga].
-📧 Email: alvarengaenzo2005@gmail.com
