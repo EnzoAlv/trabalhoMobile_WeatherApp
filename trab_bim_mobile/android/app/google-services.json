@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "969834214693",
+    "project_id": "weatherapp-d28f5",
+    "storage_bucket": "weatherapp-d28f5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969834214693:android:e0f02d010067c5887296cc",
+        "android_client_info": {
+          "package_name": "com.example.trabbimmob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGGb2_gGJdn4I7bnRztdlBxj-3LLHsc7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
