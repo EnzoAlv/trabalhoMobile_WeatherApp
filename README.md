@@ -5,8 +5,13 @@ Criação de um aplicativo mobile de previsão do tempo e clima, desenvolvido ut
 ## 🌟 Funcionalidades
 
 * Exibição de condições climáticas em tempo real.
-* Previsão do tempo para os próximos dias.
 * Interface moderna e responsiva.
+* ![image](https://github.com/user-attachments/assets/6d08ac4b-491a-48c7-95e2-27d421e84900)
+* ![image](https://github.com/user-attachments/assets/c5828e23-f01a-4eb3-ae17-1fa0b5b82ad7)
+* ![image](https://github.com/user-attachments/assets/d43a1287-fc26-4e5b-8d11-818ddb4b551a)
+
+
+
 
 ## 🚀 Tecnologias Utilizadas
 
