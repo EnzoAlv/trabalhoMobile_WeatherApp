@@ -10,6 +10,10 @@ Criação de um aplicativo mobile de previsão do tempo e clima, desenvolvido ut
 * ![image](https://github.com/user-attachments/assets/c5828e23-f01a-4eb3-ae17-1fa0b5b82ad7)
 * ![image](https://github.com/user-attachments/assets/d43a1287-fc26-4e5b-8d11-818ddb4b551a)
 
+ ## QR Code para usar a versão Web
+* ![image](https://github.com/user-attachments/assets/44865071-6778-401f-9095-8f38b21d6f87)
+
+
 
 
 
